@@ -19,7 +19,7 @@ Code fully works as expected in my testing. Takes me 5 minutes per chain on my s
 	<b>DONE-</b>Create requirements.txt
 	<b>DONE-</b>Create ENV variables
 	<b>DONE-</b>Create setup and usage documentation
-    Add memory
+    <b>WIP-</b>Add memory
 	Add more tools (Have some custom ideas)
 	
 # SETUP / USAGE
