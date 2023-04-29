@@ -22,9 +22,10 @@ Created my own python script similar to AutoGPT where you supply a local llm mod
 	
 # SETUP / USAGE
 	!pip install -r requirements.txt
+	Place alpaca13b model in models folder
 	Copy .env.example to .env and edit
 		Change GOOGLE_CSE_ID and GOOGLE_API_KEY to your google search api information
-		Change LLAMACPP_MODEL to the model in the same directory (ex. alpaca13b.bin)
+		Change LLAMACPP_MODEL to the name of the model in the models directory (ex. alpaca13b.bin)
 		Change AI_GOAL to the task you want the AI to achieve (ex. Help the human overcome a mental health struggle.)
 		Run
 
