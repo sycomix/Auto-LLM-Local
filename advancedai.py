@@ -17,7 +17,7 @@ NCTX = os.environ["N_CTX"]
 
 llm = LlamaCpp(model_path="models/"+MODEL_PATH, temperature=TEMP, n_ctx=NCTX)
 
-memory = ConversationTokenBufferMemory(llm=llm, max_token_limit=1000) #Token Limit Memory
+memory = ConversationTokenBufferMemory(llm=llm, max_token_limit=4098) #Token Limit Memory
 #memory = ConversationSummaryBufferMemory(llm=llm, max_token_limit=10) #Summary and Token Limit Memory
 #memory = ConversationSummaryMemory(llm=llm) #Summary Memory
 #memory = ConversationBufferMemory(memory_key="history") #Default Memory
