@@ -11,8 +11,10 @@ from langchain.agents import AgentType
 from langchain.llms import LlamaCpp
 
 MODEL_PATH = os.environ["LLAMACPP_MODEL"]
+TEMP = os.environ["TEMP"]
+NCTX = os.environ["N_CTX"]
 
-llm = LlamaCpp(model_path="models/"+MODEL_PATH, temperature=0.5, n_ctx=4098)
+llm = LlamaCpp(model_path="models/"+MODEL_PATH, temperature=TEMP, n_ctx=NCTX)
 
 tools = load_tools(["google-search","requests_all","wikipedia","human"], llm=llm)
 
