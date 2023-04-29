@@ -18,5 +18,14 @@ Created my own python script similar to AutoGPT where you supply a local llm mod
 	Create setup and usage documentation
     Add memory
 	Add more tools (Have some custom ideas)
-    
+	
+# SETUP / USAGE
+	!pip install -r requirements.txt
+	Edit advancedai.py
+		Change GOOGLE_CSE_ID and GOOGLE_API_KEY to your google search api information
+		Change MODEL_PATH to the model in the same directory (ex. alpaca13b.bin)
+		Change question to the task you want the AI to achieve (ex. Help the human overcome a mental health struggle.)
+		Run
+
+
 # P.S. New to python and github, just trying to do my part as I see a lot of people are asking how to do AutoGPT locally without any OpenAPI support.
