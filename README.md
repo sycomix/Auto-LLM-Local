@@ -14,9 +14,9 @@ Created my own python script similar to AutoGPT where you supply a local llm mod
     Human
     
 # TODO:
-	DONE-Create requirements.txt
-	DONE-Create ENV variables
-	Create setup and usage documentation
+	<b>DONE-</b>Create requirements.txt
+	<b>DONE-</b>Create ENV variables
+	<b>DONE-</b>Create setup and usage documentation
     Add memory
 	Add more tools (Have some custom ideas)
 	
