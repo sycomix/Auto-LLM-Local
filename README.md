@@ -19,15 +19,15 @@ Code fully works as expected in my testing. Takes me 5 minutes per chain on my s
 	<b>DONE-</b>Create requirements.txt
 	<b>DONE-</b>Create ENV variables
 	<b>DONE-</b>Create setup and usage documentation
-    <b>WIP-</b>Add memory
+    <b>TESTING-</b>Add memory
 	Add more tools (Have some custom ideas)
 	
 # SETUP / USAGE
 	!pip install -r requirements.txt
-	Place alpaca13b model in models folder
+	Place alpaca13b model in /models/alpaca13b folder and rename to model.bin
 	Copy .env.example to .env and edit
 		Change GOOGLE_CSE_ID and GOOGLE_API_KEY to your google search api information
-		Change LLAMACPP_MODEL to the name of the model in the models directory (ex. alpaca13b.bin)
+		Change LLAMACPP_MODEL to the name of the model folder in the models directory (ex. alpaca13b)
 		Change AI_GOAL to the task you want the AI to achieve (ex. Help the human overcome a mental health struggle.)
 		Run
 
