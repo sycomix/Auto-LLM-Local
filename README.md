@@ -1,3 +1,5 @@
+My computer fried itself today after 12 years, saw it coming. Apparently running a massive LLM for a month straight isnt good for it. Glad I was able to get the script in a working state with memory and tools. Please be patient until I can get back to development.
+
 NO OPEN API / HUGGINGFACE - ONLY LOCAL GGML MODELS
 
 # Auto-LLM-Local
