@@ -1,5 +1,3 @@
-My computer fried itself today after 12 years, saw it coming. Apparently running a massive LLM for a month straight isnt good for it. Glad I was able to get the script in a working state with memory and tools. Please be patient until I can get back to development.
-
 NO OPEN API / HUGGINGFACE - ONLY LOCAL GGML MODELS
 
 # Auto-LLM-Local
@@ -25,6 +23,8 @@ Code fully works as expected in my testing. Takes me 5 minutes per chain on my s
 	Add more tools (Have some custom ideas)
 	
 # SETUP / USAGE
+	!choco install make
+	Install https://visualstudio.microsoft.com/vs/
 	!pip install -r requirements.txt
 	Place alpaca13b model in /models/alpaca13b folder and rename to model.bin
 	Copy .env.example to .env and edit
