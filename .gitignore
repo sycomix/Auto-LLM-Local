@@ -7,3 +7,4 @@ models/convert.py
 models/alpaca13b/model.bin
 models/alpaca7b/model.bin
 models/alpaca13b/OLDmodel.bin
+langchain-hub
