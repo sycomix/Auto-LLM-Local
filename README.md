@@ -1,4 +1,7 @@
-NO OPEN API / HUGGINGFACE - ONLY LOCAL GGML MODELS
+```diff
++ NO OPEN API / HUGGINGFACE - ONLY LOCAL GGML MODELS
+! WILL BE COMBINGING THIS WITH MY MODULAR AI-TOOLS TO GIVE ACCESS TO AN UNLIMITED NUMBER OF TOOLS
+```
 
 # Auto-LLM-Local
 Created my own python script similar to AutoGPT where you supply a local llm model like alpaca13b (The main one I use), and the script can access the supplied tools to achieve your objective.
