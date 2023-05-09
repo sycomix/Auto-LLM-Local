@@ -24,7 +24,7 @@ Code fully works as expected in my testing. Takes me 5 minutes per chain on my s
 	
 # SETUP / USAGE
 	!choco install make
-	Install https://visualstudio.microsoft.com/vs/
+	Install https://visualstudio.microsoft.com/vs/ with C++
 	!pip install -r requirements.txt
 	Place alpaca13b model in /models/alpaca13b folder and rename to model.bin
 	Copy .env.example to .env and edit
