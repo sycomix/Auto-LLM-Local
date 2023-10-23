@@ -15,7 +15,9 @@ MODEL_PATH = os.environ["LLAMACPP_MODEL"]
 TEMP = os.environ["TEMP"]
 NCTX = os.environ["N_CTX"]
 
-llm = LlamaCpp(model_path="models/"+MODEL_PATH+"/model.bin", temperature=TEMP, n_ctx=NCTX)
+llm = LlamaCpp(
+    model_path=f"models/{MODEL_PATH}/model.bin", temperature=TEMP, n_ctx=NCTX
+)
 
 #memory = ConversationTokenBufferMemory(llm=llm, max_token_limit=4098) #Token Limit Memory
 memory = ConversationSummaryBufferMemory(llm=llm, max_token_limit=4098) #Summary and Token Limit Memory
@@ -30,7 +32,7 @@ print("Initializing agent...")
 react = initialize_agent(tools, llm, memory=memory, n_batch=8, agent="zero-shot-react-description", verbose=True, return_intermediate_steps=True)
 
 goal = os.environ["AI_GOAL"]
-print("Goal: "+goal)
+print(f"Goal: {goal}")
 
 try:
     response = react({"input":goal})
@@ -38,7 +40,7 @@ except Exception as e:
     response = str(e)
     if response.startswith("Could not parse LLM output: `"):
         response = response.removeprefix("Could not parse LLM output: `").removesuffix("`")
-        print("Corrected: "+response)
+        print(f"Corrected: {response}")
 
 executionTime = (time.time() - startTime)
-print('Execution time in seconds: ' + str(executionTime))
+print(f'Execution time in seconds: {str(executionTime)}')
